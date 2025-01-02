@@ -1,3 +1,3 @@
-pnpm install
-pnpm dev
-pnpm test
+- pnpm install
+- pnpm dev
+- pnpm test
