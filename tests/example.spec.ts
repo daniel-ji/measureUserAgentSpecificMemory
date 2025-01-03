@@ -10,6 +10,6 @@ test('has title', async ({ page }) => {
   expect(await page.title()).toBe('Vite + TS');
   await page.evaluate(async () => {
     const memory = await performance.measureUserAgentSpecificMemory();
-    console.log("Memory: " + memory.bytes);
+    console.log(`Memory: ${memory.bytes} bytes`);
   })
 });
