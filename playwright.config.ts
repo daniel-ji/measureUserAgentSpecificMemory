@@ -7,12 +7,10 @@ export default defineConfig({
       name: "chromium",
       use: {
         ...devices["Desktop Chrome"],
-        // channel: "chromium",
-        // I also tried with:
-        // launchOptions: {
-        //   ignoreDefaultArgs: ["--headless", "--headless=old"],
-        //   args: ["--headless=new"],
-        // },
+        launchOptions: {
+          ignoreDefaultArgs: ["--headless", "--headless=old"],
+          args: ["--headless=new"],
+        },
       },
     },
   ],
